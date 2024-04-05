@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.dosto-block {
+  display: flex;
+}
+.blockImage img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  padding: 20px 20px;
+  animation: moveElement 2s ease-in-out infinite alternate;
+}

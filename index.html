@@ -1,154 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>КАРАКОЛ</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/scroll.css" />
+    <link rel="stylesheet" href="/css/card.css">
+  </head>
+  <body>
     <header>
-        
-        <nav>
-            <ul class="menu">
-                
-                <li class="website">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-telegram"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                </li>
-                <li><a href="#about">О ГОРОДЕ</a></li>
-                <li><a href="#attractions">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a></li>
-                <li><a href="#activities">АКТИВНОСТИ</a></li>
-                <li><a href="#contact"><button class="bn632-hover bn22">Контакты</button></a></li>
-            </ul>
-        </nav>
-        <div class="banner">
-            <h1 class="welcome">Добро пожаловать в Каракол!</h1>
-        </div>
+      <nav class="navig">
+        <ul class="navdar">
+          <li><a href="#about">О НАС</a></li>
+          <li><a href="#attractions"> ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a></li>
+          <li><a href="/tour.html">ТУРЫ</a></li>
+          <li><a href="#contact">КОНТАКТЫ</a></li>
+          <li><a href="#rrrr">ИСТОРИЯ</a></li>
+        </ul>
+      </nav>
+      <nav class="welcome">
+        <h1>ДОБРО ПОЖАЛОВАТЬ В КАРАКОЛ</h1>
+        <p class="information">
+          Добро пожаловать на наш сайт, посвященный уникальному городу Каракол! <br>
+          Расположенный на берегу озера Иссык-Куль
+          в живописной части Кыргызстан, <br> Каракол привлекает туристов со всего
+          мира
+          своим красивым природным <br> наследием и богатой историей.
+        </p>
+      </nav>
+
+      <div class="banner" style="height: 100vh" ></div>
     </header>
-    
-    <section id="about">
-        <h2 class="main">О городе</h2>
-        <p class="min">Город Караколь был заложен 1 июля 1869 года как военно-административный центр на караванной дороге из Чуйской долины в Кашгарию штабс-капитаном бароном Каульбарсом, которому было дано задание выбрать удобное место для нового города. Город был основан на месте одноимённой крепости Кокандского ханства. Город расположен в восточной части Иссык-Кульской области у подножья хребта Терскей-Ала-Тоо в нижнем течении реки Каракол, в 12 км от побережья озера Иссык-Куль, на высоте 1690—1850 метров над уровнем моря. Расстояние до города Бишкек — 400 км, до ближайшей железнодорожной станции Балыкчи — 220 км по автодороге и 184 км водным путём.</p>
-        <div class="slider" x-data="{start: true, end: false}" style="padding-top: 70px;">
-            <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-              <div class="slider__item">
-                <img class="slider__image" src="https://triptokyrgyzstan.com/sites/default/files/media/image/c_anders_wikstrom.jpg" alt="Image">
-                <div class="slider__info">
-                  <h2>Каракол (Пржевальск) – старинный русский город на Иссык-Куле</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://www.eurasiatravel.kz/assets/images/resources/3934/22a26f7c3fad4d79f6b5ca58d41b7af08e4334ce.jpg" alt="Image">
-                <div class="slider__info">
-                  <h2>Горнольжная база Каракол</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://www.advantour.com/img/kyrgyzstan/images/karakol.jpg" alt="Image">
-                <div class="slider__info">
-                  <h2>Церковь</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://scontent.ffru8-1.fna.fbcdn.net/v/t39.30808-6/270222258_2142896442525754_7801414909344679986_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=783fdb&_nc_ohc=6JMDWd-CcjgAX_F2ikj&_nc_ht=scontent.ffru8-1.fna&oh=00_AfD8Hh4YituriiXCnICZ8PUr8i5856ndCIG9am9ZIdWdEA&oe=65E37C12" alt="Image">
-                <div class="slider__info">
-                  <h2>Университет города Каракол, Кыргызстан.</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="https://peacemessengers.info/blog/wp-content/uploads/2020/11/Ski2.jpg" alt="Image">
-                <div class="slider__info">
-                  <h2>Горнолыжный тур Кыргызстан, Каракол</h2>
-                </div>
-              </div>
+    <main>
+      <section class="text" >
+        <span>
+
+          <div class="about-section" id="about">
+
+            <div class="inner-container">
+
+              <h1>О НАС</h1>
+
+              <p class="text">
+                Мы - команда энтузиастов, влюбленных в Каракол и его
+                окрестности. Наша миссия - делиться с вами уникальными и
+                интересными местами, которые можно посетить в этом удивительном
+                городе и его окрестностях. Наши гиды и эксперты обеспечат вас
+                информацией о самых популярных достопримечательностях, маршрутах
+                путешествий, местных событиях и культуре Каракола. Мы стремимся
+                сделать ваше путешествие незабываемым и запоминающимся.
+                Присоединяйтесь к нам, чтобы открыть для себя все прелести
+                Каракола и окрестностей!
+              </p>
+              
             </div>
 
-          <!-- </div>
-    </section>
-    <section id="attractions">
-        <h2 class="ree">Достопримечательности</h2>
-        <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
-            <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-              <div class="slider__item">
-                <img class="slider__image" src="/img/dragon-scales.svg" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 1</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/flat-mountains.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 2</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 3</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/pattern_japanese-pattern-3_1_5_0-0_0_1__2a2b37_c5c4ca.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card  4</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/dragon-scales (3).svg" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 5</h2>
-                </div>
-              </div>
-            </div>
-            <div class="slider__nav" style="display: flex;justify-content: center;">
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
-            </div>
           </div>
+
+        </span>
+
+      </section>
+    </main>
+    <section id="attractions">
+      <h2 class="attractions-text">Достопримечательности</h2>
+      <div class="dosto-block">
+        <div class="dostor">
+          <div class="article-card">
+            <img src="https://www.advantour.com/img/kyrgyzstan/karakol/karakol-dungan-mosque.jpg" alt="article-cover"/>
+          </div>
+ 
+          <div class="article-card">
+            <img src="https://scontent.ffru8-1.fna.fbcdn.net/v/t39.30808-6/270222258_2142896442525754_7801414909344679986_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dcAcYCiwMBUAX_9sSV6&_nc_ht=scontent.ffru8-1.fna&oh=00_AfD-deXZU1CFMDz_fyA1RtgzR0gMMd9On-r5AmTGWHTFLg&oe=66104F12" alt="article-cover" />
+          </div>
+
+          <div class="article-card">
+            <img src="https://economist.kg/content/images/2023/12/dji_0021-2048x1364-1.jpg" alt="article-cover" />
+          </div>
+          <div class="article-card">
+                <img src="https://ic.pics.livejournal.com/uritsk/19436209/3518606/3518606_original.jpg" alt="article-cover" />
+              </div>
+              <div class="article-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Karakol_cathedral.jpg" alt="article-cover" />
+              </div>
+              <div class="article-card">
+                <img src="https://gokyrgyzstan.info/wp-content/uploads/2022/11/ak-suu-kench-017.jpg" alt="article-cover" />
+              </div>
+              <div class="article-card">
+                <img src="https://ak-sai.com/wp-content/uploads/1-16.jpg" alt="article-cover" />
+              </div>
+              <div class="article-card">
+                <img src="https://lh3.googleusercontent.com/proxy/0x4xGZYJFtIS-zE0gTzGEfOZAuNcSgOX6yB28tY-m74tDsahRm60WAqoLtYKUKthvaL1g3TC1bo78AH2xCeykAgXtKGyf2fnVwdViM89fvGuT6l8KZzwUNqRqg" alt="article-cover" />
+              </div>
+              <div class="article-card">
+                <img src="https://destinationkarakol.com/wp-content/uploads/2020/12/Tours-Around-Kyrgyzstan-2000-x-1156.jpg" alt="article-cover" />
+              </div>
+        </div>
+        
+        
     </section>
-    <section id="activities">
-        <h2 class="err">Активности</h2>
-        <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
-            <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-              <div class="slider__item">
-                <img class="slider__image" src="/img/dragon-scales.svg" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 1</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/flat-mountains.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 2</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 3</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/pattern_japanese-pattern-3_1_5_0-0_0_1__2a2b37_c5c4ca.png" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 4</h2>
-                </div>
-              </div>
-              <div class="slider__item">
-                <img class="slider__image" src="/img/dragon-scales (3).svg" alt="Image">
-                <div class="slider__info">
-                  <h2>Card 5</h2>
-                </div>
-              </div>
-            </div>
-            <div class="slider__nav" style="display: flex;justify-content: center;">
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
-              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
-            </div>
-          </div> -->
-    </section>
+    
+  <div class="kkk">
+    <!-- <h2 class="kkk-text" id="rrrr">ИСТОРИЯ</h2>   -->
+        <div class="t121">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/46SuG2nkxXg?si=pOrzktrN1vUbHaZK&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="qqqq">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47076.03193456229!2d78.36110029833321!3d42.48619502215853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38865b91e1f04c0b%3A0xeb5bfe3900e7ecfa!2z0JrQsNGA0LDQutC-0Ls!5e0!3m2!1sru!2skg!4v1712121940687!5m2!1sru!2skg" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  </div>
+    <footer>
+
+      <section id="contact">
+
+        <div class="contact">
+
+          <div class="text-info">
+            <h3> Контакты</h3>
+            <ul class="www">
+              <li><a href=" https://wa.me/75551234567 ." target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="contact-address">
+            <h2 style="color: white">Свяжитесь с нами</h2>
+            <h3>Адресс</h3>
+            <ul class="address-contact">
+              <li>Ахунбаева 125/a</li>
+            </ul>
+
+            <h3>Контакты</h3>
+            <ul class="address-contact">
+              <li>+996 777 77 77 77</li>
+              <li>support@gmail.com</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+    </footer>
+
+
+
 
     <script src="https://kit.fontawesome.com/4aa092b96c.js" crossorigin="anonymous"></script>
-</body>
+  </body>
+</html>
